@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //  Tassk 1
+
+// let tarikh = new Date()
+// document.write(tarikh)
+
+//  Task 2
+
+// function greetUser(firstName, lastName){
+// let fullName = firstName + ' ' + lastName
+//   let greet = "Hello " + fullName+ " Welcome"
+//   return greet
+// }
+
+// let userFirstName = prompt("Enter your name")
+// let userLastName = prompt("Enter your name")
+// let message = greetUser(userFirstName, userLastName)
+// document.write(message)
+
+// Task 3
+
+// function userNumber(){
+// let firstNumber = parseFloat(prompt("Enter your First Number"));
+// let lastNumber = parseFloat(prompt("Enter your Second Number"));
+
+// if(!isNaN(firstNumber) && !isNaN(lastNumber)){
+//   let sum = firstNumber + lastNumber;
+//   return sum;
+// }else{
+
+//  return 'Invalid input. Please enter valid numbers.';
+// }
+// }
+// let result = userNumber();
+// document.write('The sum of the two numbers is: ' + result)
+
+//  Task 4
+
+// function userNumber(num1, num2, oprator){
+// num1 = parseFloat(num1);
+// num2 = parseFloat(num2);
+// if(isNaN(num1) || isNaN(num2)){
+//   return 'Invalid input. Please enter a valid number'
+// }
+// switch(oprator){
+//   case "+":
+//     return num1+num2;
+//     case "-":
+//       return num1-num2;
+//       case "*":
+//         return num1*num2;
+//         case "/":
+//           if(num2===0){
+//             return 'Division by zero is not allowed.';
+//           }
+//           return num1/num2;
+//           default:
+//             return 'Invalid operator. Please use +, -, *, or /.';
+// }
+// }
+
+// let num1 = prompt("Enter your First Number");
+// let num2 = prompt("Enter your First Number");
+// let oprator = prompt('Enter the operator (+, -, *, /):');
+// let result = userNumber(num1,num2,oprator)
+
+// document.write('Result: ' + result)
+
+// Task 5
+
+// function square(number) {
+//   return number * number;
+// }
+
+// // Example usage of the function
+// var num = parseFloat(prompt('Number'));
+// var result = square(num);
+// document.write("The square of " + num + " is " + result);
+
+//  Task 6
+
+// function factorial(number) {
+//   if(number<0){
+//     return "Undefined (Factorial is not defined for negative numbers)";
+//   }
+//   else if(number === 0){
+//     return 1
+//   }else{
+//     let result =1;
+//     for(let i = 1; i <= number; i++){
+//       result *= i;
+//     }return result;
+//   }
+// }
+// let result = factorial(7);
+// document.write(result)
+
+//  Task 7
+
+// function numbers(){
+//   let startNumber = parseFloat(prompt("Enter Start Number"))
+//   let endNumber = parseFloat(prompt("Enter End Number"))
+
+// for(let i = startNumber; i <= endNumber; i++){
+
+//   return startNumber + endNumber;
+// }
+// }
+
+// document.write( numbers() )
+
+// Task 8
+
+// function calculateHypotenuse(base, perpendicular) {
+//   // Inner function to calculate the square of a number
+//   function calculateSquare(number) {
+//     return number * number;
+//   }
+
+//   const baseSquared = calculateSquare(base);
+//   const perpendicularSquared = calculateSquare(perpendicular);
+
+//   const hypotenuseSquared = baseSquared + perpendicularSquared;
+//   const hypotenuse = Math.sqrt(hypotenuseSquared);
+
+//   return hypotenuse;
+// }
+
+// // Example usage:
+// const base = 3;
+// const perpendicular = 4;
+// const result = calculateHypotenuse(base, perpendicular);
+// document.write("Hypotenuse:", result); // This will calculate and log the hypotenuse of the right triangle.
+
+
+// Task 9
+
+// function calculateRectangleArea(width, height) {
+//   return width * height;
+// }
+
+// // Example usage with arguments as values
+// const area1 = calculateRectangleArea(5, 10);
+// console.log("Area with values:", area1); 
+
+// function calculateRectangleAreaWithVariables() {
+//   const width = 5;
+//   const height = 10;
+//   return width * height;
+// }
+
+// // Example usage with arguments as variables
+// const area2 = calculateRectangleAreaWithVariables();
+// console.log("Area with variables:", area2); 
+
+
+// Task 10
+
+// function isPalindrome(str) {
+//   // Remove non-alphanumeric characters and convert to lowercase
+//   str = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+//   // Check if the string reads the same forwards and backwards
+//   for (let i = 0; i < str.length / 2; i++) {
+//     if (str[i] !== str[str.length - 1 - i]) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// // Example usage:
+// const testString = "madam";
+// const result = isPalindrome(testString);
+
+// if (result) {
+//   document.write(`"${testString}" is a palindrome.`);
+// } else {
+//   document.write(`"${testString}" is not a palindrome.`);
+// }
+
+        //  Task 11
+
+// function capitalizedWords(inputString) {
+  
+//   let words = inputString.split(' ');
+//   let capitalizedWords = words.map(word =>{
+//     if(word.length>0){
+//       return word[0].toUpperCase() + word.slice(1);
+//     }
+//     return word;
+//   })
+//  let capitalizedStrings = capitalizedWords.join(' ');
+//  return capitalizedStrings;
+// }
+// let inputString = prompt("Write test string")
+// let result = capitalizedWords(inputString);
+// document.write(result);
+
+  //  Task 12
+
+  // function findLongestWord(inputString) {
+  //   // Split the input string into words
+  //   const words = inputString.split(' ');
+  
+  //   // Initialize variables to keep track of the longest word and its length
+  //   let longestWord = '';
+  //   let longestLength = 0;
+  
+  //   // Iterate through the words to find the longest one
+  //   for (const word of words) {
+  //     const wordLength = word.length;
+  //     if (wordLength > longestLength) {
+  //       longestWord = word;
+  //       longestLength = wordLength;
+  //     }
+  //   }
+  
+  //   return longestWord;
+  // }
+  
+  // // Example usage:
+  // const inputString = 'Web Development Tutorial';
+  // const longestWordResult = findLongestWord(inputString);
+  // console.log(longestWordResult); // Output: 'Development'
+  
+  //  Task 13
+
+  // function countLetterOccurrences(inputString, letter) {
+  //   // Initialize a count to keep track of letter occurrences
+  //   let count = 0;
+  
+  //   // Iterate through the characters of the string and count the occurrences
+  //   for (let i = 0; i < inputString.length; i++) {
+  //     if (inputString[i] === letter) {
+  //       count++;
+  //     }
+  //   }
+  
+  //   return count;
+  // }
+  
+  // // Example usage:
+  // const inputString = 'JSResourceS.com';
+  // const letterToCount = 'o';
+  // const occurrences = countLetterOccurrences(inputString, letterToCount);
+  // console.log(`The letter '${letterToCount}' appears ${occurrences} times in the string.`);
+  
+  
+  // Task 14
+
+//   // Function to calculate the circumference of a circle
+// function calcCircumference(radius) {
+//   const circumference = 2 * Math.PI * radius;
+//   console.log(`The circumference is ${circumference.toFixed(2)}`);
+// }
+
+// // Function to calculate the area of a circle
+// function calcArea(radius) {
+//   const area = Math.PI * Math.pow(radius, 2);
+//   console.log(`The area is ${area.toFixed(2)}`);
+// }
+
+// // Example usage:
+// const radius = 5;
+// calcCircumference(radius);
+// calcArea(radius);
+
+  </script>
+</body>
+</html>
